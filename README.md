@@ -12,7 +12,7 @@ This is a log of my computer science resources, interests, and other code relate
 
 | Status                  | Course                                         | Year |
 | ----------------------- | ---------------------------------------------- | ---- |
-| <li>- [ ] todo</li>     | FFC: JavaScript Data Structures and Algorithms | 2021 |
+| <li>- [ ] todo</li>     | FCC: JavaScript Data Structures and Algorithms | 2021 |
 | <li>- [x] complete</li> | DigitalCrafts Full Stack Development Bootcamp  | 2021 |
 
 ### Books
