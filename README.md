@@ -5,3 +5,15 @@ This is a log of my computer science resources, interests, and other code relate
 [Portfolio](https://tatienmiller.com/)
 
 ---
+
+## Learning
+
+### Courses
+
+| Status | Year | Course                                         |
+| ------ | ---- | ---------------------------------------------- |
+| - [ ]  | 2021 | FFC: JavaScript Data Structures and Algorithms |
+
+### Books
+
+---
