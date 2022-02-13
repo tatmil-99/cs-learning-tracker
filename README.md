@@ -25,3 +25,7 @@ This is a log of my computer science resources, interests, and other code relate
 ---
 
 ## Projects In the Works :construction:
+
+### JavaScript Library App
+
+I've been working intermittently on this for a friend who is an avid reader. You're more than welcome to check out the [repo](https://github.com/tatmil-99/JavaScriptLibrary).
