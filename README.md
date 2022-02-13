@@ -15,9 +15,9 @@ This is a log of my computer science resources, interests, and other code relate
 
 ### Courses
 
-| Course                                                              | Year |
-| ------------------------------------------------------------------- | ---- |
-| <li>- [ ] to-do</li> FFC: JavaScript Data Structures and Algorithms | 2021 |
+| Status         | Course                                         | Year |
+| -------------- | ---------------------------------------------- | ---- |
+| <li>- [ ]</li> | FFC: JavaScript Data Structures and Algorithms | 2021 |
 
 ### Books
 
