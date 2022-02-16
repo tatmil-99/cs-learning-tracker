@@ -10,10 +10,10 @@ This is a log of my computer science resources, interests, and other code relate
 
 ### Courses
 
-| Status                      | Course                                         | Year |
-| --------------------------- | ---------------------------------------------- | ---- |
-| <li>- [ ] todo</li>         | FCC: JavaScript Data Structures and Algorithms | 2021 |
-| :white_check_mark: complete | DigitalCrafts Full Stack Development Bootcamp  | 2021 |
+| Status                           | Course                                         | Year |
+| -------------------------------- | ---------------------------------------------- | ---- |
+| <li>- [ ] todo</li>              | FCC: JavaScript Data Structures and Algorithms | 2021 |
+| :ballot_box_with_check: complete | DigitalCrafts Full Stack Development Bootcamp  | 2021 |
 
 ### Books
 
