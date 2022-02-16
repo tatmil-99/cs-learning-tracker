@@ -40,4 +40,8 @@ I would like to build a pollen tracker to better my knowledge and experience wit
 
 I love my [website](https://tatienmiller.com) I recently built, but I have kind of been obsessed with 90's themed things as of lateley, so I think a 90's themed website with some modern infusions would be really awesome!
 
+### A Restaurant Landing Page
+
+I'm trying to score a build for a local restaurant that makes some pretty good homestyle food.
+
 ---
