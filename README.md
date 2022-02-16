@@ -12,15 +12,15 @@ This is a log of my computer science resources, interests, and other code relate
 
 | Status                  | Course                                         | Year |
 | ----------------------- | ---------------------------------------------- | ---- |
-| <li>- [ ] todo</li>     | FCC: JavaScript Data Structures and Algorithms | 2021 |
+| <li>- [ ] ongoing</li>  | FCC: JavaScript Data Structures and Algorithms | 2021 |
 | <li>- [x] complete</li> | DigitalCrafts Full Stack Development Bootcamp  | 2021 |
 
 ### Books
 
-| Status              | Book                                                        | Year |
-| ------------------- | ----------------------------------------------------------- | ---- |
-| <li>- [ ] todo</li> | Code: The Hidden Language of Computer Hardware and Software | 2022 |
-| <li>- [ ] todo</li> | Programming and Problem Solving with C++                    | 2022 |
+| Status                 | Book                                                        | Year |
+| ---------------------- | ----------------------------------------------------------- | ---- |
+| <li>- [ ] ongoing</li> | Code: The Hidden Language of Computer Hardware and Software | 2022 |
+| <li>- [ ] ongoing</li> | Programming and Problem Solving with C++                    | 2022 |
 
 ---
 
