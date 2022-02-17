@@ -78,7 +78,16 @@ Object program - Source program translated to machine code.
 
 Compilation vs. Interpretation - The former translates entire program into mc before execting, while the latter translates line-by-line.
 
+Control Structures - Rules that determine the order in which statements (instructions) are executed.
+
 - All data within a computer's memory exists as binary codes.
 - Instructions and data are represented the same -- this allows computers to run their own instructions as data.
 - High-level standardized languages are portable, whereas assembly or machine language is not because each computer has its own machine language.
 - During execution the compiled code is loaded into memory and ran.
+
+### Types of control structures:
+
+- Sequential
+- Conditional
+- Repetitive (loop)
+- Sub-program - breaks program into smaller units.
