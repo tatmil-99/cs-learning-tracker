@@ -61,3 +61,24 @@ Unicode - New information interchange system--includes more than the english lan
 - Binary(base-two) is a good way to represent data in computers because it is either on(1) or off(0), like electricity.
 - Most programming languages use ASCII to represent characters as bytes.
 - Unicode is represented by storing 2 bytes of data in memory.
+
+## How Does a Computer Run a Program?
+
+Machine code - Binary coded instructions.
+
+Assembly language - A step up from machine code -- instructions represented as mnemonics, or easy to remember letters.
+
+Assembler - Program that translates assembly language into machine code.
+
+Compiler - Program that translates high level languages into machine code.
+
+Source program - Program/data to be translated by compiler.
+
+Object program - Source program translated to machine code.
+
+Compilation vs. Interpretation - The former translates entire program into mc before execting, while the latter translates line-by-line.
+
+- All data within a computer's memory exists as binary codes.
+- Instructions and data are represented the same -- this allows computers to run their own instructions as data.
+- High-level standardized languages are portable, whereas assembly or machine language is not because each computer has its own machine language.
+- During execution the compiled code is loaded into memory and ran.
