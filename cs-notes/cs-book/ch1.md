@@ -175,3 +175,23 @@ Software engineering - The process of creating correct/error free software.
 ### Divide and Conquer
 
 - Break large problems into smaller, solvable problems.
+
+### Building Block Approach
+
+- You look at the big problem and divide it into smaller problems for which solutions already exist.
+
+### Merging Solutions
+
+- Whenever solutions to sub-problems duplicate steps, combine them ex. (for loop with a sum variable--keeps track of sum variable and count variable in one go).
+
+### Mental Blocks: Fear of Starting
+
+- Write the problem down on paper to understand it (paraphrase).
+- You can focus on subparts once problem is broken down.
+- Breaking down helps to also pinpoint things that are unclear so you can gather more info.
+- Most mental blocks are caused by not understanding the problem.
+
+### Algorithmic Problem Solving
+
+- Remember the computer can only do certain tasks (think control structures).
+- Steps in algorithms may be trial-and-error.
