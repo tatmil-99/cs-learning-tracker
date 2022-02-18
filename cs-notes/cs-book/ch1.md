@@ -118,6 +118,10 @@ WAN - Computers can be connected further apart geographically and communicat thr
 
 WWW - Linked computers together and allowed support for web pages.
 
+Clock - An electrical circuit that fires pulses to coordinate other components within the computer. Speed is measured in GHz.
+
+Software engineering - The process of creating correct/error free software.
+
 - Most known WAN is the internet.
 
 - Data from disks is captured using magnetic read/write head. It finds magnetized spots on spinning disk.
@@ -139,3 +143,35 @@ WWW - Linked computers together and allowed support for web pages.
 - Instructions are translated into control signals
 - Control signals tell which unit to execute instruction
 - Repeat
+
+## Problem Solving Techniques
+
+### Ask questions
+
+- What does data look like?
+- What is the input?
+- What is desired output?
+- How much data is there?
+- How many times will the process be repeated?
+- Any special error conditions?
+- How will I know when i've processed all the data?
+
+### Look for Familiarity
+
+- Don't reinvent the wheel
+- Use prior solutions
+
+### Solve by Analogy
+
+- Think about how you solved similar problems in past... even non-computer-oriented problems.
+- Don't worry about different details as you can later solve for those.
+- Analogies give you a good place to start.
+
+### Means-Ends Analysis
+
+- Find your end goal and devise intermediate plans of achieving it.
+- Once you've broken it down, you find ways to achive those intermediate plans.
+
+### Divide and Conquer
+
+- Break large problems into smaller, solvable problems.
