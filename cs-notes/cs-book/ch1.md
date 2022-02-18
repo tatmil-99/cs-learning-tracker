@@ -62,6 +62,8 @@ Unicode - New information interchange system--includes more than the english lan
 - Most programming languages use ASCII to represent characters as bytes.
 - Unicode is represented by storing 2 bytes of data in memory.
 
+---
+
 ## How Does a Computer Run a Program?
 
 Machine code - Binary coded instructions.
@@ -91,3 +93,49 @@ Control Structures - Rules that determine the order in which statements (instruc
 - Conditional
 - Repetitive (loop)
 - Sub-program - breaks program into smaller units.
+
+---
+
+## What's Inside the Computer?
+
+CPU - Follows instructions. Consists of logic unit and control unit.
+
+Hardware - Physical components of computers.
+
+Software - Programs that allow hardware to operate.
+
+System software - Simplify user/computer interaction (OS, compiler, etc).
+
+Operating system - Part of system software. Oversees all computer resources. Can call compiler, execute object programs (machine code).
+
+Editor - Program that allows changes to be made to programs and data.
+
+Network - Series of connected computers.
+
+LAN (local area network) - Series of computers connected by wire or wireless router. Computers must be close together.
+
+WAN - Computers can be connected further apart geographically and communicat through telephone wires, fiber optic cables, etc.
+
+WWW - Linked computers together and allowed support for web pages.
+
+- Most known WAN is the internet.
+
+- Data from disks is captured using magnetic read/write head. It finds magnetized spots on spinning disk.
+
+- Data from flash memory is stored in silicon chips with special switches that lock into place storing either 1 or 0... even when not connected. Good for backing up data.
+
+### Computers Constist of 6 Main Components:
+
+- Memory unit - Constists of ordered cells with addresses (memory cells/locations) in which data can be extracted and stored.
+- Logic unit - Performs arithmetic and comparisons.
+- Control unit - Handles order in which components perform program instructions.
+- Input device - Accepts data from devices like keyboards.
+- Output device - Outputs data to things like monitors.
+- Auxillary storage - Holds coded data for computer until we want data (flash memory/disc drives).
+
+### Fetch Execute Cycle (occurs when a program is executing):
+
+- CPU grabs machine code from memory
+- Instructions are translated into control signals
+- Control signals tell which unit to execute instruction
+- Repeat
