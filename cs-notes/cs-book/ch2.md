@@ -1,6 +1,6 @@
 # C++ Semantics, Syntax, and the Development Process
 
-## C++ Program Structure
+## Elements of C++ Language
 
 Function - A subprogram. C++ programs consist of functions.
 
