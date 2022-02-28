@@ -50,6 +50,62 @@ let { bar } = foo;
 
 - `undefined` behaves as `false` in `boolean` context in `NaN` in numerical context.
 
-- `null` behaves as `false` in `bool` contexts and `0` in numerical contexts
+- `null` behaves as `false` in `bool` contexts and `0` in numerical contexts.
 
 ### Variable Scope
+
+- Variables declared outside of functions are global and accessible by all functions.
+
+- Variables declared inside functions are local and only accessible within that function.
+
+### Variable Hoisting
+
+- Variables are hoisted to the top of functions or statements and can be accessed before they are declared.
+
+- Hoisted variables will return `undefined`.
+
+- `let` or `const` variables are hoisted but not initialized. Accessing those variables before they are declared results in `ReferenceError`.
+
+### Function Hoisting
+
+- Only function declarations are hoisted--not function expressions. For example:
+
+```js
+/* Function declaration */
+
+foo(); // "bar"
+
+function foo() {
+  console.log("bar");
+}
+
+/* Function expression */
+
+baz(); // TypeError: baz is not a function
+
+var baz = function () {
+  console.log("bar2");
+};
+```
+
+### Global Variables
+
+- Global variable are property of the global object--`window`.
+
+- You can access global variables with `window.variable` syntax.
+
+### Constants
+
+- `const` cannot change value through assignment or be re-declared while the script is running. It must be initialized to a value.
+
+- Object and array properties can be re-assigned, for example:
+
+```js
+const MY_OBJECT = { key: "value" };
+MY_OBJECT.key = "otherValue";
+//-------------------------------
+const MY_ARRAY = ["HTML", "CSS"];
+MY_ARRAY.push("JAVASCRIPT");
+```
+
+## Data Structures and Types
