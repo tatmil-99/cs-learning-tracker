@@ -109,3 +109,52 @@ MY_ARRAY.push("JAVASCRIPT");
 ```
 
 ## Data Structures and Types
+
+### Data Types
+
+There are 8:
+
+- 7 are primitive:
+
+- `null` - Posseses no value--non-existent.
+
+- `undefined` - Possesses a value not defined.
+
+- `String` - Sequence of text characters.
+
+- `Number` - An integer or floating point number.
+
+- `BigInt` - A number of arbitrary size.
+
+- `Boolean` - `true` or `false` value.
+
+- `Symbol` - An anonymous, unique value.
+
+- Non-primitive:
+
+- `Object` - A container for collections of properties which exist in key/value format.
+
+### Data Type Conversion
+
+- JS is dynamically typed - Variables don't require type declaration.
+
+- Data types can be automatically converted.
+
+### Numbers and the '+' Operator
+
+- In a statement, a string converts the number to a string. For example:
+
+```js
+x = "The answer is " + 42; // "The answer is 42"
+y = 42 + " is the answer"; // "42 is the answer"
+```
+
+- Other operators don't convert numbers to strings.
+
+### Converting Strings to Numbers
+
+- `parseInt()` - Turns values stored as strings in memory to whole number.
+
+- `parseFloat()` - Used for non-whole numbers.
+
+## Literals
