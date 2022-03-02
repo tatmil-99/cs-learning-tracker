@@ -158,3 +158,21 @@ y = 42 + " is the answer"; // "42 is the answer"
 - `parseFloat()` - Used for non-whole numbers.
 
 ## Literals
+
+- Values not encased in variables. They are fixed.
+
+Types of Literals:
+
+- Array literals
+
+- Object literals
+
+- Boolean literals
+
+- RegEx literals
+
+- Number literals
+
+- Float literals
+
+- String literals
