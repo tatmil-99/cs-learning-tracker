@@ -97,3 +97,69 @@ user.name = "Pete"; // Error: Cannot assign to read only property 'name'
 \*\* Errors only appear in strict mode. For example, trying to reassign `user.name` would not show an error. The operation still would NOT succeed.
 
 ## Non-enumerable
+
+Typically the "toString" built-in method is non-enumerable, but if we make our own it is able to be seen in a `for...in`, e.g.
+
+```js
+let user = {
+  name: "John",
+  toString() {
+    return this.name;
+  },
+};
+
+// By default, both our properties are listed:
+for (let key in user) alert(key); // name, toString
+```
+
+If we don't want it to be iterable, then we can set `"enumerable": false`, e.g.
+
+```js
+let user = {
+  name: "John",
+  toString() {
+    return this.name;
+  },
+};
+
+Object.defineProperty(user, toString, { enumerable: false });
+
+// By default, both our properties are listed:
+for (let key in user) alert(key); // name
+```
+
+Non-enumerable properties are also excluded from `Object.keys()`.
+
+## Non-configurable
+
+A non-configurable property can't be updated or deleted. Sometimes built-in methods are non-configurable, e.g.
+
+```js
+let descriptor = Object.getOwnPropertyDescriptor(Math, "PI");
+
+alert(JSON.stringify(descriptor, null, 2));
+/*
+{
+  "value": 3.141592653589793,
+  "writable": false,
+  "enumerable": false,
+  "configurable": false
+}
+*/
+```
+
+Theres nothing that can be done about `Math.PI`, it's value or properties can't be changed.
+
+\*\* `configurable: false` still allows values to be changed, as it still may be "writable". However, the properties flags can't be changed (configured) or deleted.
+
+```js
+// A forever sealed property
+Object.defineProperty(object, "property", {
+  configurable: false,
+  writable: false,
+});
+```
+
+\*\* We can still modify `writable: true` even when `configurable: false` if we are changing `writable: true` to `writable: false`.
+
+P.S. There are more methods to handle changes to multiple property/descriptor(s).
