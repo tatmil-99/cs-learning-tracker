@@ -88,3 +88,107 @@ Now if we read something from `longEar` and it doesn't exist it searches up the 
 `__proto__` is more dated, but using it now for simplicity. Modern JS suggests `Object.getPrototypeOf`/`Object.setPrototypeOf`.
 
 ## Writing doesn't use prototype
+
+The prototype is only used for reading properties.
+
+Write/delete operations occur within the object.
+
+E.g.
+
+```js
+let animal = {
+  eats: true,
+  walk() {
+    /* this method won't be used by rabbit */
+  },
+};
+
+let rabbit = {
+  __proto__: animal,
+};
+
+rabbit.walk = function () {
+  alert("Rabbit! Bounce-bounce!");
+};
+
+rabbit.walk(); // Rabbit! Bounce-bounce!
+```
+
+The prototype isn't used when `walk` is called, the method is found and called in `rabbit`.
+
+Accessor properties are an exception when writing new values.
+
+E.g.
+
+```js
+let user = {
+  name: "John",
+  surname: "Smith",
+
+  set fullName(value) {
+    [this.name, this.surname] = value.split(" ");
+  },
+
+  get fullName() {
+    return `${this.name} ${this.surname}`;
+  },
+};
+
+let admin = {
+  __proto__: user,
+  isAdmin: true,
+};
+
+alert(admin.fullName); // John Smith
+
+// setter triggers!
+admin.fullName = "Alice Cooper";
+
+alert(admin.fullName); // Alice Cooper, state of admin modified
+alert(user.fullName); // John Smith, state of user protected
+```
+
+## The value of "this"
+
+`this` is not affected by prototypes!
+
+Inheriting objects running inherited methods update their own state, not the prototype.
+
+E.g.
+
+```js
+// animal has methods
+let animal = {
+  walk() {
+    if (!this.isSleeping) {
+      alert(`I walk`);
+    }
+  },
+  sleep() {
+    this.isSleeping = true;
+  },
+};
+
+let rabbit = {
+  name: "White Rabbit",
+  __proto__: animal,
+};
+
+// modifies rabbit.isSleeping
+rabbit.sleep();
+
+alert(rabbit.isSleeping); // true
+alert(animal.isSleeping); // undefined (no such property in the prototype)
+```
+
+## for...in loop
+
+`for...in` iterates over inherited properties.
+
+`Object.keys()` only returns its own property names, not inherited ones.
+
+`Object.hasOwnProperty(key)` also returns non-inherited values when used in `for...in` loop.
+
+`Object.hasOwnProperty` is not enumerable, just like all properties of `Object.prototype`. This means `for...in` skips over it since it only lists enumerable entities.
+
+\*\* Most built-in key/value-getting methods ignore inherited properties.
