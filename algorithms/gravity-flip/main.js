@@ -13,5 +13,12 @@ const columnQty = {
 }
 
 function flip(d, a) {
-  //return 
+  storeColumnVals(a);
+  
+  console.log(columnQty);
+}
+
+function storeColumnVals(a) {
+  const sorted = a.sort((a, b) => b - a);
+  Object.assign(columnQty, sorted);
 }
