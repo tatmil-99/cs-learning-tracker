@@ -75,3 +75,13 @@ let clone = Object.create(
 ^^^ This makes an exact copy of obj--data properties, properties and descriptors, everything.
 
 ## Class-based vs. prototype based languages
+
+Class based languages like C++ and Java are founded on two entities:
+
+- Classes - Define properties that characterize a set of objects.
+
+- Instances - Shares the exact same properties of its parent class, but represents a new "entity".
+
+Prototype-based languages don't make this distinction, they use an object as a template in which other objects can inherit. Any object can also change their properties and have other objects reference them as prototypes.
+
+TBC...
