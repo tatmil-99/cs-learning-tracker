@@ -7,10 +7,10 @@
 ### 1. Uppercase first character
 
 ```js
-/* Write a function ucFirst(str) that returns the string str with
- * the uppercased first character, for instance:
- * ucFirst("john") == "John";
- */
+/* 
+Write a function ucFirst(str) that returns the string str with the uppercased first character, for instance:
+ucFirst("john") == "John";
+*/
 
 function ucFirst(str) {
   // CONDITIONAL METHOD
@@ -31,11 +31,11 @@ console.log(ucFirst("john"));
 ### 2. Check for spam
 
 ```js
-/* Write a function checkSpam(str) that returns true if str
- * contains ‘viagra’ or ‘XXX’, otherwise false.
+/* 
+Write a function checkSpam(str) that returns true if str contains ‘viagra’ or ‘XXX’, otherwise false.
 
- * The function must be case-insensitive:
- */
+The function must be case-insensitive:
+*/
 
 function checkSpam(str) {
   // CONDITIONAL SOLUTION
@@ -56,5 +56,24 @@ console.log(checkSpam(str));
 ### 3. Truncate text
 
 ```js
+/*
+Create a function truncate(str, maxlength) that checks the length of the str and, if it exceeds maxlength – replaces the end of str with the ellipsis character "…", to make its length equal to maxlength.
 
+The result of the function should be the truncated (if needed) string.
+/*
+
+/*
+Algorithm:
+Find the length of str
+If greater than maxLength, get substr that is 19 chars long 
+And append ellipses to the substr, then return substr
+Else return str
+*/
+
+function truncate(str, maxlength) {
+  if (str.length > maxlength) {
+    return str.slice(0, maxlength - 1) + "…";
+  }
+  return str;
+}
 ```
