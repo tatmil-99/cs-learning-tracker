@@ -8,6 +8,7 @@
 
 ```js
 /* 
+Instructions:
 Write a function ucFirst(str) that returns the string str with the uppercased first character, for instance:
 ucFirst("john") == "John";
 */
@@ -32,6 +33,7 @@ console.log(ucFirst("john"));
 
 ```js
 /* 
+Instructions:
 Write a function checkSpam(str) that returns true if str contains ‘viagra’ or ‘XXX’, otherwise false.
 
 The function must be case-insensitive:
@@ -57,6 +59,7 @@ console.log(checkSpam(str));
 
 ```js
 /*
+Instructions:
 Create a function truncate(str, maxlength) that checks the length of the str and, if it exceeds maxlength – replaces the end of str with the ellipsis character "…", to make its length equal to maxlength.
 
 The result of the function should be the truncated (if needed) string.
@@ -75,5 +78,22 @@ function truncate(str, maxlength) {
     return str.slice(0, maxlength - 1) + "…";
   }
   return str;
+}
+```
+
+### 4. Extract the money
+
+```js
+/*
+Instructions:
+We have a cost in the form "$120". That is: the dollar sign goes 
+first, and then the number.
+
+Create a function extractCurrencyValue(str) that would extract the
+numeric value from such string and return it.
+*/
+
+function extractCurrencyValue(str) {
+  return Number(str.slice(1));
 }
 ```
