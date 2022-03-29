@@ -1,6 +1,6 @@
 # Strings
 
-- [ ] https://javascript.info/string
+- [x] https://javascript.info/string
 
 ## Tasks
 
