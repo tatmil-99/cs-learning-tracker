@@ -17,6 +17,11 @@ shoppingCart.push("Banana");
 
 // what's in fruits?
 alert(fruits.length); // --> 4
+
+/*
+Explanation:
+Objects can only "==" each other if they reference the same value in memory... arrays are objects. Creating another variable that stores the original variable isn't a real clone, just a reference. 
+*/
 ```
 
 ### 2. Calling in an array context
