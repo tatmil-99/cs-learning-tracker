@@ -8,9 +8,9 @@ function palindrome(str) {
       }
     })
     .join('');
-
-  return alphaNum !== alphaNum.split('').reverse().join('') ? 
-    false : true;
+  
+  const inverse = alphaNum.split('').reverse().join('');
+  return alphaNum !== inverse ? false : true;
 }
 
 palindrome("eye");
