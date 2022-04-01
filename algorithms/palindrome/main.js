@@ -9,7 +9,8 @@ function palindrome(str) {
     })
     .join('');
 
-  console.log(alphaNum)
+  return alphaNum !== alphaNum.split('').reverse().join('') ? 
+    false : true;
 }
 
 palindrome("eye");
