@@ -9,7 +9,7 @@ function palindrome(str) {
     })
     .join('');
 
-  console.log(alphaNum
+  console.log(alphaNum)
 }
 
 palindrome("eye");
