@@ -14,12 +14,28 @@ Add to updated version of str
 function rot13(str) {
   const alphabet = [];
   let count = 65; 
-  
+
   while (count <= 90) {
     alphabet.push(String.fromCharCode(count));
     count++;
   }
 
+  let shiftedCiph = '';
+  
+  for (let i = 0; i < str.length; i++) {
+    if (/[A-Z]/.test(str[i]) && 
+      alphabet.indexOf(str[i]) > 12) 
+    {
+      shiftedCiph += alphabet[alphabet.indexOf(str[i]) - 13];
+    } else if (/[A-Z]/.test(str[i]) && 
+        alphabet.indexOf(str[i]) <= 12) 
+    {
+      shiftedCiph += alphabet[alphabet.indexOf(str[i]) + 13];  
+    } else {
+      shiftedCiph += str[i];
+    }
+  }
+  return shiftedCiph;
 }
 
 rot13("SERR PBQR PNZC");
