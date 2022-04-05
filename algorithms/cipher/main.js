@@ -11,7 +11,7 @@ If the char is not a member of alph
 Add to updated version of str
 */
 
-function rot13(str) {
+function makeAlphabet() {
   const alphabet = [];
   let count = 65; 
 
@@ -20,22 +20,26 @@ function rot13(str) {
     count++;
   }
 
-  let shiftedCiph = '';
+  return alphabet;
+}
+
+function rot13(str) {
+  const alphabet = makeAlphabet();
+  let rotStr = '';
   
   for (let i = 0; i < str.length; i++) {
     if (/[A-Z]/.test(str[i]) && 
       alphabet.indexOf(str[i]) > 12) 
     {
-      shiftedCiph += alphabet[alphabet.indexOf(str[i]) - 13];
+      rotStr += alphabet[alphabet.indexOf(str[i]) - 13];
     } else if (/[A-Z]/.test(str[i]) && 
-        alphabet.indexOf(str[i]) <= 12) 
+      alphabet.indexOf(str[i]) <= 12) 
     {
-      shiftedCiph += alphabet[alphabet.indexOf(str[i]) + 13];  
-    } else {
-      shiftedCiph += str[i];
-    }
+      rotStr += alphabet[alphabet.indexOf(str[i]) + 13];  
+    } else rotStr += str[i];
   }
-  return shiftedCiph;
+
+  return rotStr;
 }
 
 rot13("SERR PBQR PNZC");
