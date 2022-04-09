@@ -17,41 +17,40 @@ const register = {
 
 function checkCashRegister(price, cash, cid) {
   let change = cash - price; 
-  
   const cidClone = JSON.parse(JSON.stringify(cid)); 
 
+  // Sorts cid from greatest to least to return change like so 
   const sortedCid = [];
   for (let i = cidClone.length - 1; i >= 0; i--) {
     sortedCid.push(cidClone[i]);
   }
 
+  // Calculate total of type number in cid using reduce and filter
   let drawerAmt = sortedCid
     .reduce((previous, current) => previous.concat(current))
     .filter(element => typeof element === "number")
     .reduce((previous, current) => previous + current);
   
   // Use forEach to count back change from cid and track amount in drawer
-  sortedCid.forEach(arr => {
+  sortedCid.forEach(cash => {
     const unit = 0;
     const amt = 1;
     let total = 0;
-    
+    // Use while loop alter state of cid and track change to return 
     while (
-      currency[arr[unit]] <= change.toFixed(2) && 
-      arr[amt] > 0   
+      currency[cash[unit]] <= change.toFixed(2) && 
+      cash[amt] > 0   
       ) {
-      arr[amt] -= currency[arr[unit]];
-      drawerAmt -= currency[arr[unit]];
-      change -= currency[arr[unit]];
-      
-      total += currency[arr[unit]];
-      register.change.push([arr[unit], total])
+      cash[amt] -= currency[cash[unit]];
+      drawerAmt -= currency[cash[unit]];
+      change -= currency[cash[unit]];
+      // Counts total change to return in each monetary unit
+      total += currency[cash[unit]];
+      register.change.push([cash[unit], total]);
     }
   });
   
-  //console.log(sortedCid)
-
-  // Check for sufficient funds and update register stats
+  // Check for sufficient funds and update register status
   if (change.toFixed(2) > 0) {
     register.status = "INSUFFICIENT_FUNDS";
     register.change = []; 
